@@ -34,7 +34,7 @@ def get_prediction():
 
     baby_df = pd.DataFrame(baby_data_cleaned)
 
-    with open("model/model.pkl",'rb') as obj:
+    with open("model.pkl",'rb') as obj:
         model = pickle.load(obj)
     
     prediction = model.predict(baby_df)
